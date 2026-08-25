@@ -1,0 +1,9 @@
+.env
+bot.log
+stop_loss_state.json
+stop_loss_state.json.tmp
+instrument_cache.json
+__pycache__/
+*.pyc
+.venv/
+venv/
