@@ -194,6 +194,14 @@ What restores reconstruction: more masks, a larger camera relative to the
 diffraction spread, or both. A test with L = 8 and a 3.84 mm camera gave a
 13.8 % relative error.
 
+## Compatibility fix (after first run on Colab)
+
+- **Cell 1, imports:** `pyfftw` is now optional. If it is not installed (as on
+  Colab), the code falls back to `numpy.fft` and prints a note. Results are
+  identical; it is just slower (about 80 s instead of 30 s for the default run).
+  To get the fast version, run `!pip install pyfftw` first.
+- **Cell 6:** removed the unused `shapely` import.
+
 ## Not changed (outside fixes 1–5)
 
 These issues from the review are still open:
